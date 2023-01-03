@@ -4,9 +4,9 @@ from random import choices
 import string
 from typing import List
 
-specials = "~!@#$%^&*()_-+={[}]|\:<,>.?/"
+SPECIALS = "~!@#$%^&*()_-+={[}]|\:<,>.?/"
 
-all_pass_chars = string.ascii_letters + string.digits + specials
+all_pass_chars = string.ascii_letters + string.digits + SPECIALS
 
 
 def password_gen(*, remove: List[str] = None, password_length: int = 8):
@@ -22,17 +22,15 @@ def password_gen(*, remove: List[str] = None, password_length: int = 8):
     Returns:
         password as per the user requirement
     """
-    assert type(
-        remove) == list or remove is None, f"Not of a required type 'List' " \
+    assert isinstance(remove, list) or remove is None, f"Not of a required type 'List' " \
                                            f"instead it is '{type(remove)}'."
-    assert type(
-        password_length) == int, f"Not of a required type 'int' instead it " \
+    assert isinstance(password_length, int), f"Not of a required type 'int' instead it " \
                                  f"is '{type(remove)}'."
     if remove:
         filtered_pass = str([all_pass_chars.replace(i, "") for i in remove])
         return ''.join(choices(filtered_pass, k=password_length))
-    else:
-        return ''.join(choices(all_pass_chars, k=password_length))
+    
+    return ''.join(choices(all_pass_chars, k=password_length))
 
 
 if __name__ == "__main__":
