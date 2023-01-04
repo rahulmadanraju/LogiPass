@@ -1,7 +1,7 @@
 """ This file includes the tests for the main file """
 from unittest import TestCase
 
-from logiapp.main import password_gen
+from logipass.main import password_gen
 
 
 class TestPasswordGen(TestCase):

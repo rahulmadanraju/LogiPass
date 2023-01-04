@@ -1,6 +1,6 @@
 """ This file contains the implementations of web application. """
 from flask import Flask, render_template, request
-from logiapp.main import password_gen
+from logipass.main import password_gen
 
 app = Flask(__name__, static_folder="static")
 
