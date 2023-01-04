@@ -1,3 +1,4 @@
+""" This file contains the implementations of web application. """
 from flask import Flask, render_template, request
 from main import password_gen
 
