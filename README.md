@@ -1,3 +1,3 @@
 # LogiPass
 
-![ImageLogo](/static/Logipass.png)
+![ImageLogo](logipass/static/Logipass.png)
