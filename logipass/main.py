@@ -28,6 +28,15 @@ def password_gen(*, remove: List[str] = None, password_length: int = 8):
     assert isinstance(password_length, int), (
         f"Not of a required type 'int' instead it " f"is '{type(remove)}'."
     )
+
+    # check for only letters
+    # check for only numbers
+    # check for only special_chars
+    # check for numbers+letters
+    # check for numbers+chars
+    # check for letters+chars
+    # check for letters+numbers+chars
+    
     if remove:
         filtered_pass = str([ALL_PASS_CHARS.replace(i, "") for i in remove])
         return "".join(choices(filtered_pass, k=password_length))
