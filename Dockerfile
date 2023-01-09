@@ -8,4 +8,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 RUN pip install .
 
-CMD ["python", "app.py"]
+CMD ["python", "logipass/app.py"]
