@@ -22,13 +22,22 @@
     <title>Output Tag</title>
 </head>
 <body>
+
+<div>
+  <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+  <output>24</output>
+  <input type="checkbox" id="numbers" name="numbers" checked>
+  <label for="numbers">Numbers</label>
+  <input type="checkbox" id="letters" name="letters">
+  <label for="letters">Letters</label>
+</div>
 <div class=page>
-    <div class="right-middle">
-        <form method="post">
-            <button style="width: 200px; height: 35px; background-color: #FCE45B; border-radius: 25px;" type="submit">generate password</button>
-            <output style="font-size: 24px;">{{output}}</output>
-        </form>
-    </div>
+  <div class="right-middle">
+    <form method="post">
+      <button style="width: 200px; height: 35px; background-color: #FCE45B; border-radius: 25px;" type="submit">generate password</button>
+      <output style="font-size: 24px;">{{output}}</output>
+    </form>
+  </div>
 </div>
 </body>
 </html>
