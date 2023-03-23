@@ -18,6 +18,6 @@ pip install logipass
 
 ## Contact
 
-[@rahulmadanraju](https://linkedin.com/rahulmadanraju) - rahulmadanraju@gmail.com
-
-Project Link: [https://github.com/rahulmadanraju/LogiPass](https://github.com/rahulmadanraju/LogiPass)
+- LinkedIn: [@rahulmadanraju](https://www.linkedin.com/in/rahul-madan-raju/)
+- Email: rahulmadanraju@gmail.com
+- Project: [https://github.com/rahulmadanraju/LogiPass](https://github.com/rahulmadanraju/LogiPass)
