@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder="static")
 
 @app.route("/", methods=["GET", "POST"])
 def my_func():
-    """ Executes the password generator function on clicking
+    """Executes the password generator function on clicking
     the generate button
 
     Returns:
